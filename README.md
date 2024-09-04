@@ -1,2 +1,2 @@
 # Concessionária: front-end
-# Páginas: home, sobre, carros (estoque), contato
+Páginas: home, sobre, carros (estoque), contato
