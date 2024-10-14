@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carioca | Concessionária </title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+        .limitador{
+            max-width: 1300px;
+            margin: 0px auto;
+        }
+        body{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .header{
+            background-color: black;
+            text-align: center;
+        }
+        .img-header{
+            max-width: 160px;
+        }
+        .nav{
+            background-color: rgb(75, 72, 72);
+            justify-content: space-around;
+            padding: 6px;
+            color: rgb(255, 255, 255);
+            font-weight: lighter;
+        }
+        .introducao{
+            background-image: url(image/background1.avif);
+            background-size: cover;
+            width: 100%;
+            padding: 180px;
+            color: white;
+        }
+        .texto{
+            max-width: 300px;
+            text-align: left;
+            font-weight: 700;
+        }
+        .sombra{
+            box-shadow: 30px;
+        }
+        .fundo-col{
+            background-color: whitesmoke;
+            padding: 65px;
+        }
+        .title-cars{
+            margin: 15px;
+        }
+        .cars{
+            text-align: center;
+            margin: 10px;
+            padding: 10px;
+        }
+        .img-cars{
+            max-width: 300px;
+        }
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: orange;
+            border-radius: 50%;
+        }
+        .carousel-indicators [data-bs-target] {
+            background-color: orange;
+        }
+        .carousel-inner img {
+            border-radius: 10px;
+            background-color: rgba(255, 165, 0, 0.3); 
+        }
+
+
+
+    </style>
+</head>
+<body>
+<div class="limitador">
+    <div class="header">
+        <img class="img-header" src="image/PG.png">
+    </div>
+    <div class="nav">
+        <a>Home</a>
+        <a>Sobre</a>
+        <a href="#cars">Modelos</a>
+        <a>Contato</a>
+    </div>
+    <div class="introducao">
+        <div class="texto">
+            <h1 class="texto sombra">Bem-vindos à nossa concessionária</h1>
+            <p>Encontre os melhores carros novos e usados aqui.</p>
+        </div>
+    </div>
+    <div class="cars" id="cars">
+        <h2 class="title-cars">Nossos melhores modelos, exclusivamente para você!</h2>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-6">
+                    <div class="fundo-col">
+                        <img class="img-cars" src="image/car1.png">
+                        <h5>Carro 1</h5>
+                        <p>Descrição do carro</p>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="fundo-col">
+                        <img class="img-cars" src="image/car2.png">
+                        <h5>Carro 2</h5>
+                        <p>Descrição do carro</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="image/car1.png" class="d-block w-100" alt="Imagem 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="image/car2.png" class="d-block w-100" alt="Imagem 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="image/PG.png" class="d-block w-100" alt="Imagem 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-gJWVnQn1vdSaMSTFt/3pEj9IhG19loGB8jzJYXrs/fCBebxt3q2PIKlA2FXRJxG4" crossorigin="anonymous"></script>
+    
+
+</div>
+</body>
+</html>
